@@ -3,7 +3,6 @@ Project to explain git workflows to students
 
 Slides : https://docs.google.com/presentation/d/16eEDMDin6eRqLmcMi7e1N0vbOjkd0vI-u4j8MSAmP2g/edit?usp=sharing
 
-
 # Git Operations
 
 ## add / commit / push
@@ -153,4 +152,3 @@ flowchart TD
     D --> G[Combines all commits into one<br/>Clean linear history]
     E --> H[Replays commits without merge commit<br/>Linear history with individual commits]
 ```
-
