@@ -38,8 +38,6 @@ sequenceDiagram
     Note over LR: Remote changes downloaded
     LR->>WD: git merge origin/<branch>
     Note over WD: Changes merged into working directory
-    
-    Note over RR,WD: git pull = git fetch + git merge
 ```
 
 ## rebase
@@ -60,9 +58,9 @@ gitGraph
     commit id: "C'"
     commit id: "D'"
     
-    Note: "After rebase: feature commits replayed on top of main"
-```
 
+```
+    
 Alternative view:
 ```mermaid
 sequenceDiagram
@@ -74,7 +72,6 @@ sequenceDiagram
     Note over Feature: Reset to common ancestor B
     Main->>Feature: Fast-forward to latest (F)
     Temp->>Feature: Replay commits C', D'
-    Note over Feature: Commits rewritten with new base
 ```
 
 ## cherry pick
@@ -93,8 +90,6 @@ gitGraph
     commit id: "F"
     cherry-pick id: "D"
     commit id: "D'"
-    
-    Note: "Commit D copied as D' to main branch"
 ```
 
 Process flow:
