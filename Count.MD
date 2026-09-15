@@ -1,4 +1,4 @@
-# Counting 1-21
+# Counting 1-20
 
 1
 2
